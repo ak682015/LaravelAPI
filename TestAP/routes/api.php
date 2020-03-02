@@ -26,4 +26,6 @@ Route::get('/students', 'ApiController@show');
 
 Route::get('/student/{id}', 'ApiController@showbyid');
 
+Route::put('/studentupdate/{id}', 'ApiController@updatebyid');
+
 
