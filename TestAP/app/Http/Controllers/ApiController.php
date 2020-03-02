@@ -65,4 +65,11 @@ class ApiController extends Controller
 
         return response()->json($students);
     }
+
+    public function deletebyid(Request $request, $id)
+    {
+        $students = Student::find($id);
+        $students->delete();
+        return response()->json($students);
+    }
 }
